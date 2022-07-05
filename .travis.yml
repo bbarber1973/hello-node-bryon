@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- 10
+  - 10
 before_install:
-- npm install -g npm
+  - npm install -g npm
 script:
-- npm install
-- npm test
+  - npm install
+  - npm test
 deploy:
   provider: heroku
-  api_key: c1ea0259-e892-415a-9f51-e19b670431fc
-  app: hello-node-boris
+  api_key: 8aae9e63-f938-4bf8-8231-052c40220328
+  app: hello-node-bryon
   on:
-    repo: bmisljen/hello-node-boris
+    repo: bbarber1973/hello-node-bryon
     branch: master
